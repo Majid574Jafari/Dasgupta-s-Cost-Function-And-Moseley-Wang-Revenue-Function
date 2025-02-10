@@ -7,7 +7,7 @@ In hierarchical clustering, evaluating the quality of a clustering tree is cruci
 Dasgupta's cost function provides a quantitative measure of how well a hierarchical clustering captures the inherent similarity between data points. Consider an undirected graph $G = (V, E)$, where $V$ represents the data points and $E$ contains edges weighted by the similarity $w_{ij}$ between points $i$ and $j$. The cost associated with a clustering tree $T$ (whose leaves correspond to the original data points) is defined as:
 
 
-$$ Cost_{Dasgupta}(T) = \sum_{i<j} w_{ij} \cdot |T_{ij}| $$
+$ Cost_{Dasgupta}(T) = \sum_{i<j} w_{ij} \cdot |T_{ij}| $
 
 
 
@@ -18,7 +18,7 @@ Here, $|T_{ij}|$ denotes the number of leaves in the subtree rooted at the lowes
 Complementing the cost function, the Moseley-Wang revenue function offers an alternative perspective by rewarding clusterings that efficiently separate dissimilar points. It is given by:
 
 
-$$ Revenue_{Moseley-Wang}(T) = \sum_{i<j} w_{ij} \cdot (n - |T_{ij}|) $$
+$ Revenue_{Moseley-Wang}(T) = \sum_{i<j} w_{ij} \cdot (n - |T_{ij}|) $
  
 
 In this equation, $n$ denotes the total number of data points, and $|T_{ij}|$ is as defined above. The revenue function provides an alternative perspective by rewarding clusterings that separate dissimilar points early in the hierarchy.
